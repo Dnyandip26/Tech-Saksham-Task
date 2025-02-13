@@ -1,0 +1,130 @@
+/* Smooth gradient animation for the background */
+@keyframes gradientAnimation {
+    0% { background: #ece9e9; }
+    50% { background: #e3f2fd; }
+    100% { background: #ece9e9; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: gradientAnimation 6s infinite alternate ease-in-out;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Title styling */
+h1, h2 {
+    color: #333;
+    transition: color 0.5s ease-in-out;
+}
+
+/* Form & Search Section */
+.form, .search {
+    margin: 20px 0;
+    padding: 15px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Input fields */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Glowing button effect */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #4093ca;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #cd9a1b;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(205, 154, 27, 0.8);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Table Header */
+th {
+    background-color: #21a9c7;
+    color: white;
+}
+
+/* Delete Button */
+td button {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .form, .dark-mode .search {
+    background: #444;
+}
+
+.dark-mode th {
+    background-color: #555;
+}
+
+.dark-mode input {
+    background: #222;
+    color: white;
+    border-color: #666;
+}
+
+.dark-mode button {
+    background: #ff6b6b;
+}
+
+.dark-mode button:hover {
+    background: #ff4757;
+}
